@@ -4,6 +4,8 @@
  */
 package hilospruebas;
 
+import javax.swing.SwingUtilities;
+
 /**
  *
  * @author andre
@@ -14,7 +16,7 @@ public class HilosPruebas {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        SwingUtilities.invokeLater(() -> new GestorDescargaGUI().setVisible(true));
     }
     
 }
